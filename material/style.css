@@ -8,7 +8,8 @@
     font-weight: bold;
 	height: 80px;
 	align-items: center;
-	background-color: grey;
+	border-bottom: solid black;
+	
 }
 
 .logo
@@ -16,6 +17,7 @@
 	color: mediumaquamarine;
 	display: flex;
 	align-items: center;
+	width: 400px;
 }
 
 .logo h2
@@ -28,19 +30,76 @@
 .header .nav
 {
 	display: flex;
-	background-color: red;
 	height: 80px;
 	align-items: center;
 	width: 1800px;
 	flex-shrink: 5;
 	justify-content: flex-end;
+	margin-right: 40px;
+	
 }
 
 .nav a
 {
 	padding: 10px;
+	padding: 40px 20px;
+	color: black;
 
 }
+
+/*Content*/ 
+
+.content
+{
+	position: relative;
+	top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.left
+{
+	width: 630px;
+	border: 1px solid black;
+	background-image: url(main_story.png);
+	height: 500px;
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+.left h1
+{
+	position: relative;
+	top: 55px;
+	color: white;
+	font-size: 40px;
+	padding-left: 15px;
+}
+
+.middle
+{
+	width: 300px;
+	border: 1px solid black;
+}
+
+.right
+{
+	width: 240px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
