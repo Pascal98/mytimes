@@ -3,12 +3,15 @@
 	display: flex;
 	width: 100%;
 	position: fixed;
+	top: -15px;
 	font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
 	height: 80px;
 	align-items: center;
 	border-bottom: solid black;
+	z-index: 1;
+	background-color: white;
 	
 }
 
@@ -54,39 +57,161 @@
 	position: relative;
 	top: 100px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	width: 100%;
 }
+
+/*left column*/
 
 .left
 {
 	width: 630px;
 	border: 1px solid black;
-	background-image: url(main_story.png);
-	height: 500px;
-	background-repeat: no-repeat;
+	height: 1800px;
 	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-.left h1
+.left .picture
 {
+	background-image: url(main_story.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.left .picture span
+{
+	font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+	padding-left: 20px;	
+}
+
+.cols
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.col1
+{
+	padding-right: 15px;
+}
+
+.colpicture
+{
+	width: 100%;
+	background-image: url(fall_season.png);
+	background-repeat: no-repeat;
+	height: 318px;
 	position: relative;
-	top: 55px;
-	color: white;
-	font-size: 40px;
+	top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.colpicture2
+{
+	width: 100%;
+	background-image: url(hipster.png);
+	background-repeat: no-repeat;
+	height: 318px;
+	position: relative;
+	top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.colpicture, .colpicture2, .colpicture3 span
+{
+	font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+	text-align: center;
+}
+
+.left .cols .col2
+{
 	padding-left: 15px;
 }
+
+/*middle column*/
 
 .middle
 {
 	width: 300px;
 	border: 1px solid black;
+	padding: 0 10px;
 }
+
+.middle .coltext
+{
+	position: relative;
+	top: -25px;
+}
+
+.colpicture3
+{
+	width: 100%;
+	background-image: url(cat_ceo.png);
+	background-repeat: no-repeat;
+	height: 318px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*right column*/
 
 .right
 {
 	width: 240px;
 	border: 1px solid black;
 }
+
+.colpicture4
+{
+	width: 100%;
+	background-image: url(cookie.png);
+	background-repeat: no-repeat;
+	height: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.col4text
+{
+	text-align: center;
+}
+
+.coltable table tr td
+{
+	padding: 11px 20px;
+	font-size: 13px;
+	border-bottom: 1px solid black;
+	width: 100%;
+	color: grey;
+}
+
+.coltable
+{
+	background-color: #F1F1F1;
+	font-family: helvetica;
+}
+
+/*Footer*/
+
+
 
 
 
